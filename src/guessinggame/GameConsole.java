@@ -3,11 +3,8 @@ import java.util.Scanner;
 /**
  * GameConsole of GuessingGame
  * @author Charin Tantrakul 
- *
  */
 public class GameConsole {
-	
-
 	Scanner input = new Scanner(System.in);
 	/**
 	 * play() will start Guessing game and ark guess to input a number
@@ -20,15 +17,11 @@ public class GameConsole {
 		int guessnum=0;
 		while(checker==false){
 			System.out.print("What is your guess?");
-			 guessnum = input.nextInt();			 
+			guessnum = input.nextInt();			 
 			checker = game.guess(guessnum);
 			System.out.println(game.getHint());
-			
-			
 		}
 		System.out.printf("Correct. You used %d guesses",game.getCount());
 		return guessnum;
 	}
-	
-	
 }
