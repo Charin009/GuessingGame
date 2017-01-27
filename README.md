@@ -1,4 +1,5 @@
-## by
+## Guessing Game
+# by Charin Tantrakul
 
 This is Guessing Game.
 You guess the number, the game will generate a random number.
