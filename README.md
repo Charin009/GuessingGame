@@ -1,7 +1,5 @@
-## Summary of Git commands:
+## by
 
-* git init - create a new repository
-* git status - compare working directory with repository
-* git food - this not git command
-
-Charin Tantrakul}
+This is Guessing Game.
+You guess the number, the game will generate a random number.
+You need to follow the hint of the game to get that secret number.
