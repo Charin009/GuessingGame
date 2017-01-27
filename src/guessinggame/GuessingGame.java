@@ -20,7 +20,7 @@ public class GuessingGame {
 	}
 	/**
 	 * Create a random number between 1 and limit.
-	 * @param limit is the upper limit for random number
+	 * @param limit is the limit for random number
 	 * @return a random number between 1 and limit (inclusive)
 	 */
 	private int getRandomNumber(int limit){
@@ -30,8 +30,8 @@ public class GuessingGame {
 	}
 	/**
 	 * Guess input their number to check
-	 * @param number is the number that's input by guess
-	 * @return true if number is correct with secret return false if number not correct with secret
+	 * @param number is the number that input by user
+	 * @return true if number match with secret return false if number not match with secret
 	 */
 	public boolean guess(int number){
 		if(number==this.secret){
@@ -58,15 +58,15 @@ public class GuessingGame {
 		return this.hint;
 	}
 	/**
-	 * Set hint up to the answer of player and upperboundnumber
-	 * @param hint is String that will show when start to guide player and show when player input number of guess
+	 * Set hint depend on  answer of the player and upperboundnumber
+	 * @param hint depend on  answer of the player and upperboundnumber
 	 */
 	protected void setHint(String hint){
 		this.hint = hint;
 	}
 	/**
-	 * getCount() will return all time of answer that player input it 
-	 * @return count as integer
+	 * getCount() return total number of answers that players input.
+	 * @return count is total number of answers that players input.
 	 */
 	public int getCount(){
 		return this.count;
