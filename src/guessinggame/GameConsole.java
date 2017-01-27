@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class GameConsole {
 	Scanner input = new Scanner(System.in);
 	/**
-	 * play() will start Guessing game and ark guess to input a number
-	 * @param game is create object GuessingGame  
+	 * play() will start Guessing game and ask user to input a number
+	 * @param game will create object GuessingGame  
 	 * @return secret number that correct with number that input by guess
 	 */
 	public int play(GuessingGame game){
