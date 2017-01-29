@@ -13,6 +13,7 @@ public class GameConsole {
 	 */
 	public int play(GuessingGame game){
 		boolean checker= false;
+		System.out.println("Guessing Game")
 		System.out.println(game.getHint());
 		int guessNumber=0;
 		while(checker==false){
