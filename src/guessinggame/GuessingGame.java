@@ -7,18 +7,21 @@ import java.util.Random;
  */
 public class GuessingGame {
 	/* properties of a guessing game*/
-	private int upperbound;
+	private int upperBound;
 	private int secret;
 	private String hint;
-	int count=0;
+	private int count=0;
+	
 	/**
 	 * Set defalut of variable upperbound, secret and hint.
 	 */
-	public GuessingGame(int upperbound){
-		this.upperbound = upperbound;
-		this.secret = getRandomNumber(upperbound);
-		this.hint = "I'm thinking of a number between 1 and "+upperbound+".";
+	public GuessingGame(int upperBound){
+		this.upperBound = upperBound;
+		this.secret = getRandomNumber(upperBound);
+		this.hint = "I'm thinking of a number between 1 and "+upperBound+".";
+	
 	}
+	
 	/**
 	 * Create a random number between 1 and limit.
 	 * @param limit is the limit for random number
@@ -28,29 +31,30 @@ public class GuessingGame {
 		long seed = System.currentTimeMillis();
 		Random rand = new Random(seed);
 		return rand.nextInt(limit)+1;
+	
 	}
+	
 	/**
-	 * Guess input their number to check
-	 * @param number is the number that inputed by user
+	 * Receive from number that inputed by user and check with secret number whether that match or not 
+	 * @param number is receive from number that inputed by user
 	 * @return true if number match with secret and false if number not match with secret
 	 */
 	public boolean guess(int number){
 		if(number==this.secret){
 			setHint("Correct. The secret is "+number+".");
-			this.count++;
 			return true;
 		}
 		else if (number>=this.secret){
 			setHint("Sorry,your guess is too large.");
-			this.count++;
 			return false;
 		}
 		else{
 			setHint("Sorry,your guess is too small.");
-			this.count++;
 			return false;
 		}
+		this.cout=cout++;
 	}
+	
 	/**
 	 * Return a hint based on the most recent guess.
 	 * @return hint as a string.
@@ -58,6 +62,7 @@ public class GuessingGame {
 	public String getHint(){
 		return this.hint;
 	}
+	
 	/**
 	 * Set hint depend on  answer of the player and upperboundnumber.
 	 * @param hint is received as a String.
@@ -65,6 +70,7 @@ public class GuessingGame {
 	protected void setHint(String hint){
 		this.hint = hint;
 	}
+
 	/**
 	 * getCount() return total number of answers that players input.
 	 * @return count
