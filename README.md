@@ -2,5 +2,5 @@
 ## by Charin Tantrakul
 
 This is Guessing Game.
-You guess the number, the game will generate a random number.
-You need to follow the hint of the game to get that secret number.
+the game will random a number as secret number and,
+you need to follow the hint of the game to get that secret number.
