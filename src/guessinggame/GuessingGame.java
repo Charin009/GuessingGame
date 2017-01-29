@@ -52,7 +52,7 @@ public class GuessingGame {
 			setHint("Sorry,your guess is too small.");
 			return false;
 		}
-		this.cout=cout++;
+		this.count=count++;
 	}
 	
 	/**
